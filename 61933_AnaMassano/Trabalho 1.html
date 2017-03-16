@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script type="text/javascript" src="funcoes.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+	</head>
+	
+	<body onkeydown="Key(event)">
+		<audio id="myAudio" autoplay>
+			<source src="musicaDeFundo.mp4" type='audio/mp4'>
+		</audio>
+		<audio id="myAudioCoin">
+			<source src="musicaCoin.mp3" type='audio/mp4'>
+		</audio>
+		<div id="scroller">   
+			<div id="character">
+			</div> 
+			<div id="treasure">
+			</div> 
+			<div id="key">
+			</div> 
+			<div id="coin">
+			</div> 
+		</div> 
+		<button onclick="moveB()">Baixo</button> 
+		<button onclick="moveD()">Direita</button>
+		<button onclick="moveC()">Cima</button> 
+		<button onclick="moveE()">Esquerda</button> 
+		<button onclick="stop()">Parar</button> 
+		
+		<div id="pos"></div>
+		<div id="distanciaTesouro"></div>
+		<div id="nMoedas"></div>
+	</body>
+</html>
